@@ -1,0 +1,96 @@
+body {
+	margin: 0px;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  font-family: 'Bebas Neue';
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  height: 75px;
+}
+
+.logo-section img {
+  width: 100px;
+  height: 50px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.heading-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem 0;
+}
+
+.nav-heading {
+	padding: 2px;
+	cursor: pointer;
+}
+
+.nav-heading:hover {
+	background-color: white;
+	color: black;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+}
+
+.main-content {
+  margin-top: 75px;
+  padding: 1rem;
+  border: dashed 1px black;
+  font-family: 'Libre Baskerville';
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .heading-section {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .heading-section.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .logo-section {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
