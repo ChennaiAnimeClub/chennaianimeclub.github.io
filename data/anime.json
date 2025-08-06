@@ -1,0 +1,122 @@
+[
+	{
+		"id": "aot",
+		"title": "Attack on Titan",
+		"vibes": {
+			"action": 3,
+			"tragedy": 2,
+			"mystery": 1,
+			"wholesome": 0,
+			"comedy": 0
+		},
+		"image": "assets/anime/attack_on_titan.jpg"
+	},
+	{
+		"id": "yuru-camp",
+		"title": "Yuru Camp",
+		"vibes": {
+			"wholesome": 3,
+			"comedy": 2,
+			"action": 0,
+			"tragedy": 0,
+			"mystery": 0
+		},
+		"image": "assets/anime/yuru_camp.jpg"
+	},
+	{
+		"id": "kaguya-sama",
+		"title": "Kaguya-sama: Love is War",
+		"vibes": {
+			"comedy": 3,
+			"romance": 2,
+			"wholesome": 1,
+			"mystery": 0,
+			"action": 0
+		},
+		"image": "assets/anime/kaguya_sama.jpg"
+	},
+	{
+		"id": "steins-gate",
+		"title": "Steins;Gate",
+		"vibes": {
+			"mystery": 3,
+			"tragedy": 2,
+			"action": 1,
+			"wholesome": 0,
+			"comedy": 1
+		},
+		"image": "assets/anime/steins_gate.jpg"
+	},
+	{
+		"id": "violet-evergarden",
+		"title": "Violet Evergarden",
+		"vibes": {
+			"tragedy": 3,
+			"wholesome": 2,
+			"romance": 2,
+			"action": 1,
+			"comedy": 0
+		},
+		"image": "assets/anime/violet_evergarden.jpg"
+	},
+	{
+		"id": "one-punch-man",
+		"title": "One Punch Man",
+		"vibes": {
+			"action": 3,
+			"comedy": 3,
+			"mystery": 0,
+			"wholesome": 0,
+			"tragedy": 0
+		},
+		"image": "assets/anime/one_punch_man.jpg"
+	},
+	{
+		"id": "re-zero",
+		"title": "Re:Zero − Starting Life in Another World",
+		"vibes": {
+			"mystery": 2,
+			"tragedy": 3,
+			"action": 2,
+			"comedy": 1,
+			"wholesome": 0
+		},
+		"image": "assets/anime/re_zero.jpg"
+	},
+	{
+		"id": "spy-x-family",
+		"title": "Spy x Family",
+		"vibes": {
+			"comedy": 2,
+			"action": 2,
+			"wholesome": 2,
+			"mystery": 1,
+			"tragedy": 0
+		},
+		"image": "assets/anime/spy_x_family.jpg"
+	},
+	{
+		"id": "clannad-after-story",
+		"title": "Clannad: After Story",
+		"vibes": {
+			"tragedy": 3,
+			"romance": 3,
+			"wholesome": 2,
+			"comedy": 1,
+			"action": 0
+		},
+		"image": "assets/anime/clannad_after_story.jpg"
+	},
+	{
+		"id": "made-in-abyss",
+		"title": "Made in Abyss",
+		"vibes": {
+			"mystery": 3,
+			"tragedy": 3,
+			"action": 2,
+			"wholesome": 0,
+			"comedy": 0
+		},
+		"image": "assets/anime/made_in_abyss.jpg"
+	}
+]
