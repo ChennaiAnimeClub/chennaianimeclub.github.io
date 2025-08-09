@@ -1,0 +1,153 @@
+<div class="navbar" id="navbar">
+			<div class="logo-section">
+				<img id="logo" src="assets/logoW.png" alt="CAC Logo" />
+				<button class="hamburger" id="hamburger">&#9776;</button>
+			</div>
+
+			<div class="heading-section" id="heading-section">
+				<div class="nav-heading" id="nav-home">
+					<span>home</span>
+				</div>
+				<div class="nav-heading" id="nav-paxc25">
+					<span>PAX Chennai 2025</span>
+				</div>
+				<div class="nav-heading" id="nav-ai25">
+					<span>Anime India 2025</span>
+				</div>
+				<div class="nav-heading" id="nav-quiz">
+					<span>Quiz</span>
+				</div>
+				<div class="nav-heading" id="nav-about">
+					<span>About</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-content" id="main">
+			<!-- home page -->
+			<div id="home" class="homepage">
+				home
+			</div>
+
+			<!-- PAX Chennai 2025 page -->
+			<div id="paxc25" style="display: none">PAX Chennai 2025</div>
+
+			<!-- Anime India 2025 page -->
+			<div id="ai25" style="display: none">Anime India 2025</div>
+
+			<!-- quiz page -->
+			<div class="quiz-module" id="quiz" style="display: none">
+				<div class="quiz-module-title">
+					<h1>Anime Recommendation Quiz</h1>
+				</div>
+
+				<div class="quiz-module-content">
+					<div class="start-quiz-section" id="start-quiz-section">
+						<button id="start-quiz-btn">Start Quiz?</button>
+					</div>
+
+					<div id="quiz-section" class="quiz-section" style="display: none">
+						<div id="question-box"></div>
+						<button id="next-btn" class="next-btn" style="display: none">Next</button>
+					</div>
+
+					<div id="result-section" class="result-section" style="display: none">
+						<h2>Thanks for taking the quiz!</h2>
+						<div id="result-content" class="result-content"></div>
+						<div class="result-buttons">
+							<button id="retake-btn" class="retake-btn">Retake Quiz?</button>
+							<button id="home-btn" class="home-btn">Homepage</button>
+						</div>
+					</div>
+				</div>
+
+				<script type="text/javascript" src="quiz.js"></script>
+			</div>
+
+			<!-- about CAC page -->
+			<div id="about" style="display: none">About</div>
+		</div>
+
+
+
+
+
+
+window.onload = function () {
+	let counter = 0;
+	const main_logo = document.getElementById('main-logo');
+	nav_paxc25.addEventListener('click', () => {
+			counter = counter + 1;
+			if(counter == 1) {
+				alert('hello there!');
+			}
+	});
+
+	const hamburger = document.getElementById('hamburger');
+	const headings = document.getElementById('heading-section');
+	const main = document.getElementById('main');
+	const navbar = document.getElementById('navbar');
+
+	function toggle_hamburger_menu() {
+		headings.classList.toggle('show');
+		setTimeout(() => {
+			const navHeight = navbar.offsetHeight;
+			main.style.marginTop = `${navHeight}px`;
+		}, 10);
+	}
+
+	hamburger.addEventListener('click', toggle_hamburger_menu);
+
+	const logo = document.getElementById('logo');
+	const nav_home = document.getElementById('nav-home');
+	const nav_paxc25 = document.getElementById('nav-paxc25');
+	const nav_ai25 = document.getElementById('nav-ai25');
+	const nav_quiz = document.getElementById('nav-quiz');
+	const nav_about = document.getElementById('nav-about');
+
+	const home = document.getElementById('home');
+	const paxc25 = document.getElementById('paxc25');
+	const ai25 = document.getElementById('ai25');
+	const quiz = document.getElementById('quiz');
+	const about = document.getElementById('about');
+
+	function go_to_home() {
+		paxc25.style.display = 'none';
+		home.style.display = 'block';
+		ai25.style.display = 'none';
+		quiz.style.display = 'none';
+		about.style.display = 'none';
+	}
+
+	logo.addEventListener('click', go_to_home);
+	nav_home.addEventListener('click', go_to_home);
+
+	nav_paxc25.addEventListener('click', () => {
+		paxc25.style.display = 'block';
+		home.style.display = 'none';
+		ai25.style.display = 'none';
+		quiz.style.display = 'none';
+		about.style.display = 'none';
+	});
+	nav_ai25.addEventListener('click', () => {
+		paxc25.style.display = 'none';
+		home.style.display = 'none';
+		ai25.style.display = 'block';
+		quiz.style.display = 'none';
+		about.style.display = 'none';
+	});
+	nav_quiz.addEventListener('click', () => {
+		paxc25.style.display = 'none';
+		home.style.display = 'none';
+		ai25.style.display = 'none';
+		quiz.style.display = 'flex';
+		about.style.display = 'none';
+	});
+	nav_about.addEventListener('click', () => {
+		paxc25.style.display = 'none';
+		home.style.display = 'none';
+		ai25.style.display = 'none';
+		quiz.style.display = 'none';
+		about.style.display = 'block';
+	});
+};

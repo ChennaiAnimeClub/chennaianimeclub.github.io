@@ -1,5 +1,6 @@
 body {
 	margin: 0px;
+	background-color: black;
 }
 
 .navbar {
@@ -64,11 +65,86 @@ body {
 .main-content {
 	margin-top: 75px;
 	padding: 1rem;
-	border: dashed 1px black;
 	font-family: 'Libre Baskerville';
 }
 
+.homepage {
+	display: flex;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.main-info {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.main-link {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	color: #fff8e7;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.main-img {
+	height: 217px;
+	width: 500px;
+	cursor: pointer;
+}
+
+.linktree-button {
+	display: inline-block;
+	padding: 12px 24px;
+	background: linear-gradient(90deg, #ffd300, #da291c, #a52a2a, #8f1d8f);
+	background-size: 300% 300%;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.1rem;
+	border-radius: 50px;
+	box-shadow: 0 4px 10px rgba(218, 41, 28, 0.4);
+	animation: gradientShift 8s ease infinite;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+}
+
+.linktree-button:hover {
+	transform: translateY(-3px) scale(1.05);
+	box-shadow: 0 6px 14px rgba(218, 41, 28, 0.6);
+}
+
+.linktree-button:active {
+	transform: translateY(0) scale(0.98);
+	box-shadow: 0 3px 7px rgba(218, 41, 28, 0.4);
+}
+
+@keyframes gradientShift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 @media (max-width: 600px) {
+	.main-img {
+		height: 108.5px;
+		width: 250px;
+	}
+
 	.navbar {
 		flex-direction: column;
 		align-items: stretch;
